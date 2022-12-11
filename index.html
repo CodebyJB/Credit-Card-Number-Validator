@@ -4,13 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="logic.js" defer></script>
     <title>Creditcard Checker</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Credit Card Number Validator</h1>
+        <p>
+          You can use this tool to check if the credit card number is valid or
+          not.
+        </p>
+        <h2>To use the Credit Card Checker tool, follow these steps:</h2>
+        <ul>
+          <li>
+            <b>Step 1:</b> Enter the debit card or credit card number in the
+            text box.
+          </li>
+          <li><b>Step 2:</b> Click the "Submit" button.</li>
+          <li>
+            <b>Step 3:</b> After clicking the Submit button, you will get the
+            result if your credit card is valid or invalid.
+          </li>
+        </ul>
+      </header>
+      <main>
+        <div class="cc_display">
+          <fieldset class="cc_input">
+            <input type="tel" maxlength="4" class="cc_input" />
+            <input type="tel" maxlength="4" class="cc_input" />
+            <input type="tel" maxlength="4" class="cc_input" />
+            <input type="tel" maxlength="4" class="cc_input" />
+          </fieldset>
+          <button class="submit_btn">Submit 💳</button>
+          <figure class="logo"></figure>
+          <figure class="chip">
+            <img src="img/Chip.png" alt="Credit Card Microchip Picture" />
+          </figure>
+        </div>
+        <div class="result"></div>
+      </main>
+      <section>
+        <h2>How it works</h2>
+        <p>
+          This tool has a Luhn Algorithm checker, which will analyze your card
+          number against the
+          <a
+            href="https://de.wikipedia.org/wiki/Luhn-Algorithmus"
+            target="_blank"
+            >Luhn Algorithm</a
+          >
+          for verification. The Luhn algorithm (also called modulo 10 or mod 10)
+          is a checksum formula for numbers/digits used with credit card or
+          administrative numbers.
+        </p>
+      </section>
+    </div>
+  </body>
 </html>
