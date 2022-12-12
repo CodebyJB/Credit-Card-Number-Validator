@@ -41,12 +41,14 @@
       </header>
       <main>
         <div class="cc_display">
-          <fieldset class="cc_input">
-            <input type="tel" maxlength="4" class="cc_input" />
-            <input type="tel" maxlength="4" class="cc_input" />
-            <input type="tel" maxlength="4" class="cc_input" />
-            <input type="tel" maxlength="4" class="cc_input" />
-          </fieldset>
+          <input
+            class="cc_inputs"
+            type="tel"
+            maxlength="16"
+            id="cc_digit"
+            pattern="[0-9]"
+            placeholder=" Enter Credit Card Number"
+          />
           <button class="submit_btn">Submit 💳</button>
           <figure class="logo"></figure>
           <figure class="chip">

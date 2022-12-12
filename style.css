@@ -38,6 +38,30 @@ li {
   border-radius: 5px;
   background-color: rgb(55, 55, 204);
   position: relative;
+  z-index: 100;
+  overflow: hidden;
+}
+.cc_display::before {
+  content: "";
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border-radius: 100%;
+  background-color: rgba(138, 119, 119, 0.211);
+  top: -250px;
+  left: -150px;
+  z-index: -1;
+}
+.cc_display::after {
+  content: "";
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  border-radius: 100%;
+  background-color: hsl(0, 0%, 100%, 0.075);
+  bottom: -475px;
+  left: -150px;
+  z-index: -1;
 }
 .chip {
   position: absolute;
@@ -51,21 +75,20 @@ li {
   right: 2rem;
   width: 4rem;
 }
-fieldset {
-  margin: 2rem 0;
+.cc_inputs {
+  margin: 8rem 0 2rem;
   border: none;
-  padding-top: 5rem;
-}
-fieldset > input {
-  width: 3rem;
+  width: 14rem;
   cursor: pointer;
 }
 button {
+  display: block;
   padding: 0 1rem;
   margin-bottom: 1rem;
   cursor: pointer;
   transition: ease 0.5s;
   border: none;
+  background-color: white;
 }
 button:hover {
   color: rgb(55, 55, 204);
